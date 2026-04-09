@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Project</title>
+</head>
+<body>
+
+<h2>Choose Project Work Plan</h2>
+
+<div>
+  <h3>Project 1</h3>
+  <p>50 Pages Book (Front & Back 100)</p>
+  <p>Duration: 7 Days</p>
+  <p>Salary: ₹25,000</p>
+  <p>Registration Fees: ₹499</p>
+  <button onclick="selectProject('Project 1')">Select</button>
+</div>
+
+<div>
+  <h3>Project 2</h3>
+  <p>90 Pages Book (Front & Back 180)</p>
+  <p>Duration: 10 Days</p>
+  <p>Salary: ₹30,000</p>
+  <p>Registration Fees: ₹899</p>
+  <button onclick="selectProject('Project 2')">Select</button>
+</div>
+
+<div>
+  <h3>Project 3</h3>
+  <p>120 Pages Book (Front & Back 240)</p>
+  <p>Duration: 15 Days</p>
+  <p>Salary: ₹35,000</p>
+  <p>Registration Fees: ₹1299</p>
+  <button onclick="selectProject('Project 3')">Select</button>
+</div>
+
+<p><b>Note:</b> Choose Project Work Plan</p>
+<p>Registration fees will be refunded after project completion</p>
+<p>After registration, 50% salary will be shared</p>
+
+<script>
+function selectProject(project) {
+  localStorage.setItem("project", project);
+  window.location.href = "form.html";
+}
+</script>
+
+</body>
+</html>
